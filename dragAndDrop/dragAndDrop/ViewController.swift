@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         shuffle = numberArray.shuffled()
 
-        // Do any additional setup after loading the view.
         longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(self.longHandleGesture(gesture:)))
         longPressGesture.minimumPressDuration = 0.1
         collectionView.addGestureRecognizer(longPressGesture)
